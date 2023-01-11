@@ -8,7 +8,7 @@ from problem import Problem
 from evolution import Evolution
 
 #Leer archivo .obj
-vertices, faces=read_obj("/Users/mariajosebernal/Documents/EAFIT/2022-2/Optimización/Proyecto/Caras 3D/Final/Hombre.obj")
+vertices, faces=read_obj("/Users/isabella/Desktop/Universidad/QuintoSemestre/Optimizacion_II/Proyecto/Caras 3D/Final/Hombre.obj")
 
 #Buscar puntos del borde
 points=[]
@@ -34,24 +34,6 @@ for i in range(len(border)):
     #print(border[i], points[border[i]].x, points[border[i]].y)
 
 #BORDE: 9786 9787 9725 4094 9892 9688 9909 9935 9990 9697 9953 9860 2389 9666
-
-# #Graficar los puntos del borde con los fijos elegidos
-# plt.plot(xb, yb, 'bo')
-# plt.plot(x[9786], y[9786],'ro')
-# plt.plot(x[9787], y[9787],'ro')
-# plt.plot(x[9725], y[9725],'ro')
-# plt.plot(x[4094], y[4094],'ro')
-# plt.plot(x[9892], y[9892],'ro')
-# plt.plot(x[9688], y[9688],'ro')
-# plt.plot(x[9909], y[9909],'ro')
-# plt.plot(x[9935], y[9935],'ro')
-# plt.plot(x[9990], y[9990],'ro')
-# plt.plot(x[9697], y[9697],'ro')
-# plt.plot(x[9953], y[9953],'ro')
-# plt.plot(x[9860], y[9860],'ro')
-# plt.plot(x[2389], y[2389],'ro')
-# plt.plot(x[9666], y[9666],'ro')
-# plt.show()
 
 p1=x.index(max(x))
 p2=x.index(min(x))
